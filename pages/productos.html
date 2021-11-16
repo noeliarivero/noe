@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="../scss/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet"><link>
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32x32.png">
+
+	<title>Productos</title>
+
+</head>
+<body>
+	<nav>
+		<a class="logo" href="../index.html">
+			<img src="../media/logo.png" width="140" class="logo" alt="Nur" loading="lazy">
+		</a>
+
+		<input type="checkbox" id="check">
+		<label for="check" class="bar-btn"><img src="../media/menu.png" alt=""></label>
+	
+		<ul class="nav-menu">
+			<li class="menu__boton nav-item">
+				<a class="nav-link colorPrimario active" href="../index.html">Inicio</a>
+			</li>
+			<li class="menu__boton nav-item">
+				<a class="nav-link colorPrimario" href="productos.html">Productos</a>
+			</li>
+			<li class="menu__boton nav-item">
+				<a class="nav-link colorPrimario" href="quienessomos.html">Quiénes Sómos</a>
+			</li>
+			<li class="menu__boton nav-item">
+				<a class="nav-link colorPrimario" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+<h2>Productos</h2>
+
+<div id="printCardProducts" class="items texto"> 
+</div>
+
+<div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+</div>
+<div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+</div>
+
+
+<div class="carrito">
+	<table class="table">
+	<thead>
+	<tr class="text-primary">
+		<th scope="col">#</th>
+		<th scope="col">Productos</th>
+		<th scope="col">Precio</th>
+		<th scope="col">Cantidad</th>
+	</tr>
+	</thead>
+	<tbody class="tbody">
+	</tbody>
+	</table>
+	
+	<div class="row mx-4">
+	<div class="col">
+		<h3 class="itemCartTotal fuentePrincipal colorPrimario">Total: 0</h3>
+	</div>
+	<div class="col d-flex justify-content-end">		
+		<button class="btn btn-success compra" >COMPRAR</button>
+	</div>
+	</div>
+</div>
+
+<div class="modal" tabindex="-1">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title">Compra exitosa.</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<p>Gracias por confiar en nosotros!</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-primary btn-recargar" data-dismiss="modal">Aceptar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+<div class="btn-whatsapp">
+	<a href="https://api.whatsapp.com/send?phone=5493425208515&text=Hola!%20%0AQuisiera%20consultar" target="_blank"><img src="../media/whatsapp.png" alt="whatsapp"></a>
+</div>
+
+<footer class="p-3 mt-5">
+	<p class="text-center m-0 colorPrimario">Nur | Lenceria de diseño.</p>
+	<div class="iconos">
+		<p class="iconosTexto">Nuestras redes:</p>
+		<a href="https://www.instagram.com/nur.lenceria/" target="_blank"><img src="../media/instagram.png" alt=""></a>
+		<a href="https://www.facebook.com/nur.lenceria" target="_blank"><img src="../media/facebook.png" alt=""></a>
+	</div>
+</footer>
+
+	<script src="../javascript/productos.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
